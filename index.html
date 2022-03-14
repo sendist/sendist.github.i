@@ -307,6 +307,7 @@ https://templatemo.com/tm-531-reflux
 					$.getJSON("scraping.json",
 							function (data) {
 						var berita = '';
+						var n = 1;
 
 						// ITERATING THROUGH OBJECTS
 						$.each(data, function (key, value) {
@@ -315,7 +316,9 @@ https://templatemo.com/tm-531-reflux
 							// DATA FROM JSON OBJECT
 							berita += '<tr>';
 
-                            berita += '<td>' + (n+1) + '</td>';
+							berita += '<td>' + n + '</td>';
+							n++;
+						
 							berita += '<td>' +
 								value.judul + '</td>';
 
