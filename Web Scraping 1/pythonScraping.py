@@ -33,6 +33,6 @@ for kategoriDanJudul in obj.find_all('div', class_='teaser_conten1_center'):
     waktu = waktu.find_next(class_='date')
 
 # dump list dictionary menjadi file json
-jdumps=json.dumps(data)
+jdumps=json.dumps(data, indent = 2)
 f.writelines(jdumps)
 f.close()

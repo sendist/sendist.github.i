@@ -29,40 +29,7 @@ https://templatemo.com/tm-531-reflux
     <link rel="stylesheet" href="assets/css/templatemo-style.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
-
-	<style>
-		table {
-			margin: 0 auto;
-			font-size: large;
-			border: 1px solid black;
-		}
-
-		h1 {
-			text-align: center;
-			color: #921723;
-			font-size: xx-large;
-			font-family: 'Gill Sans',
-				'Gill Sans MT', ' Calibri',
-				'Trebuchet MS', 'sans-serif';
-		}
-
-		td {
-			background-color: #a30000;
-			border: 1px solid white;
-		}
-
-		th,
-		td {
-			font-weight: bold;
-			border: 1px solid white;
-			padding: 10px;
-			text-align: center;
-		}
-
-		td {
-			font-weight: normal;
-		}
-	</style>
+    <link rel="stylesheet" href="assets/css/style.css" />
 
   </head>
 
@@ -88,6 +55,7 @@ https://templatemo.com/tm-531-reflux
                 <li><a href="#section3">Lesson Learned & Harapan</a></li>
                 <li><a href="#section4">Alamat</a></li>
                 <li><a href="#section5">Web Scraping 1</a></li>
+                <li><a href="#section6">Web Scraping 2</a></li>
               </ul>
             </nav>
             <div class="social-network">
@@ -127,9 +95,7 @@ https://templatemo.com/tm-531-reflux
               >Profil singkat mengenai diri saya</span
             >
           </div>
-          <div class="left-image-post">
             <div class="row">
-  
               <div class="col-md-10">
                 <div class="left-text">
                   <h4>Biodata</h4>
@@ -145,7 +111,6 @@ https://templatemo.com/tm-531-reflux
                 </div>
               </div>
             </div>
-          </div>
           <div class="right-image-post">
             <div class="row">
               <div class="col-md-6">
@@ -231,11 +196,6 @@ https://templatemo.com/tm-531-reflux
             >
             <div class="left-image-post">
             <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  
-                </div>
-              </div>
               <div class="col-md-12">
                 <div class="mid-text">
                   <h4>Lesson Learned</h4>
@@ -263,7 +223,7 @@ https://templatemo.com/tm-531-reflux
             </section>
          
 
-      <section class="section contact-me" data-section="section4">
+      <section class="section my-services" data-section="section4">
         <div class="container">
           <div class="section-heading">
             <h2>Alamat</h2>
@@ -276,7 +236,7 @@ https://templatemo.com/tm-531-reflux
         	 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472.7977816993036!2d107.52440023893205!3d-6.858517017727223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5137580b9a5%3A0x996591064591a6c3!2sIMAH%20FROZEN!5e0!3m2!1sen!2sid!4v1645428361784!5m2!1sen!2sid" width="950" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>		</div>
 	</section>
 
-      <section class="section contact-me" data-section="section5">
+      <section class="section my-services" data-section="section5">
         <div class="container">
           <div class="section-heading">
             <h2>Web Scraping 1</h2>
@@ -285,63 +245,56 @@ https://templatemo.com/tm-531-reflux
               >Hasil web scraping dari website Republika halaman berita terkini.</span
             >
           </div>
+
 	 <div class="col-md-12">
-
-		<h1>Berita Republika Terkini</h1>
-
+		<h1>Berita Republika Terkini</h1> <br>
+    <button type="button" class="collapsible">Klik Untuk Melihat Tabel</button>
+    <div class="content">
 		<!-- TABLE CONSTRUCTION-->
 		<table id='table'>
 			<!-- HEADING FORMATION -->
 			<tr>
-                <th>No</th>
+        <th>No</th>
 				<th>Judul</th>
 				<th>Kategori</th>
 				<th>Waktu Publish</th>
 				<th>Waktu Scraping</th>
 			</tr>
+    </div>
+  </table>
+</div>
+</div>
+</section>
 
-			<script type="text/javascript">
-				$(document).ready(function () {
+      <section class="section my-services" data-section="section6">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Web Scraping 2</h2>
+            <div class="line-dec"></div>
+            <span
+              >Hasil web scraping dari website Republika halaman berita terkini.</span
+            >
+          </div>
 
-					// FETCHING DATA FROM JSON FILE
-					$.getJSON("scraping.json",
-							function (data) {
-						var berita = '';
-						var n = 1;
-
-						// ITERATING THROUGH OBJECTS
-						$.each(data, function (key, value) {
-
-							//CONSTRUCTION OF ROWS HAVING
-							// DATA FROM JSON OBJECT
-							berita += '<tr>';
-
-							berita += '<td>' + n + '</td>';
-							n++;
-						
-							berita += '<td>' +
-								value.judul + '</td>';
-
-							berita += '<td>' +
-								value.kategori + '</td>';
-
-							berita += '<td>' +
-								value.publish + '</td>';
-
-							berita += '<td>' +
-								value.scraping + '</td>';
-
-							berita += '</tr>';
-						});
-						
-						//INSERTING ROWS INTO TABLE
-						$('#table').append(berita);
-					});
-				});
-			</script>
-
-	</section>
-
+	 <div class="col-md-12">
+		<h1>Berita Republika Terkini</h1> <br>
+    <button type="button" class="collapsible">Klik Untuk Melihat Tabel</button>
+    <div class="content">
+		<!-- TABLE CONSTRUCTION-->
+		<table id='table'>
+			<!-- HEADING FORMATION -->
+			<tr>
+        <th>No</th>
+				<th>Judul</th>
+				<th>Kategori</th>
+				<th>Waktu Publish</th>
+				<th>Waktu Scraping</th>
+			</tr>
+    </div>
+  </table>
+</div>
+</div>
+</section>
 
     </div>
 
@@ -354,6 +307,8 @@ https://templatemo.com/tm-531-reflux
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/webScrap1.js"></script>
+    <script src="assets/js/collapse.js"></script>
     <script>
       //according to loftblog tut
       $(".main-menu li:first").addClass("active");

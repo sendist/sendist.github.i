@@ -1,0 +1,46 @@
+table {
+    margin: 0 auto;
+    font-size: large;
+    border: 1px solid black;
+    table-layout:fixed;
+}
+
+h1 {
+    text-align: center;
+    color: #921723;
+    font-size: xx-large;
+    font-family: 'Gill Sans',
+        'Gill Sans MT', ' Calibri',
+        'Trebuchet MS', 'sans-serif';
+}
+
+td {
+    background-color: #a30000;
+    border: 1px solid white;
+}
+
+th,
+td {
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    font-weight: normal;
+}
+
+.content {
+  padding: 0 0px;
+  background-color: rgba(255, 255, 255, 0);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
+
+.collapsible {
+  width: 100%;
+  text-align: mid;
+  font-size: 20px;
+}
