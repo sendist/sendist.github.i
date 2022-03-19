@@ -1,6 +1,6 @@
 table {
     margin: 0 auto;
-    font-size: large;
+    font-size: normal;
     border: 1px solid black;
     table-layout:fixed;
 }
